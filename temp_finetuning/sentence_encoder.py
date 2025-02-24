@@ -32,10 +32,11 @@ def encode_sentence(sentence, max_length=107):
     return tokens["input_ids"], tokens["attention_mask"]
 
 # Sample sentence with entity indicators
-# sentence = "[E1] Barack Obama [/E1] was the 44th president of the [E2] United States [/E2]."
-
-sentence = " "
-input_ids, attention_mask = encode_sentence(sentence)
+'''
+each and every sentence should be encoded from the api csv and class csv 
+'''
+sentence = " " #extracted from the dataframe of api_class
+input_ids, attention_mask = encode_sentence(sentence) 
 
 # Model forward pass
 model = SentenceEncoder()

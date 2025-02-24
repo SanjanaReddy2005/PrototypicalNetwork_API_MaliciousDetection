@@ -29,4 +29,4 @@ dummy_embeddings = torch.rand(batch_size, seq_length, embed_dim)  # Simulating B
 encoder = CNNEncoder(embed_dim=embed_dim, num_filters=128, kernel_size=3)
 sentence_vector = encoder(dummy_embeddings)
 
-print("Sentence representation shape:", sentence_vector.shape)  # Should be (batch_size, num_filters)
+# print("Sentence representation shape:", sentence_vector.shape)  # Should be (batch_size, num_filters)
