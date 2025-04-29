@@ -3,8 +3,8 @@
 **Clone the repository**
 
 ```sh
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/SanjanaReddy2005/PrototypicalNetwork_API_MaliciousDetection.git
+cd PrototypicalNetwork_API_MaliciousDetection
 ```
 
 **Set up Virtual Environment**
