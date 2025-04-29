@@ -30,7 +30,7 @@ python3 scraper_api.py
 python3 scraper_class.py
 ```
 
-**Files .ipynb to be run
+**Files .ipynb to be run**
  1. csv_def.ipynb
  2. class.ipynb
  3. Proto-CATT-BERT/final_code.ipynb
