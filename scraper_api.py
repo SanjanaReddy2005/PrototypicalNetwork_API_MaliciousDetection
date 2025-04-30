@@ -7,11 +7,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 
-names = ['class','sha256']
-for i in range(2,107):
-    names.append(f'api_seq_call_{i}')
 
-df = pd.read_csv('./malware_dataset/malware_API_dataset.csv',on_bad_lines='skip',names=names)
+df = pd.read_csv('./csv_files/after_data.csv')
 
 api_columns = df.columns[2:]  # API call columns
 unique_apis = set()
@@ -53,12 +50,12 @@ for i,api in enumerate(unique_apis):
 driver.quit()
 
 # Print API descriptions
-print("\nAPI Dictionary:")
-for api, desc in api_dict.items():
-    print(f"{api}: {desc}")
+# print("\nAPI Dictionary:")
+# for api, desc in api_dict.items():
+#     print(f"{api}: {desc}")
 
 import pickle
 
-f = open("./pkl_files/file.pkl","wb")
+f = open("file.pkl","wb")
 pickle.dump(api_dict,f)
 f.close()
